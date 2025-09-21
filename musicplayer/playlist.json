@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Freezing Moon",
+    "src": "assets/song/freezingmoon.mp3",
+    "artist": "Mayhem",
+    "cover": "assets/cover/mayhem.jpg"
+  },
+  {
+    "title": "Like Him",
+    "src": "assets/song/like_hime.mp3",
+    "artist": "Tyler, the Creator",
+    "cover": "assets/cover/likeHim.jpg"
+  },
+    {
+    "title": "Alexandra",
+    "src": "assets/song/alexandra.mp3",
+    "artist": "Reality Club",
+    "cover": "assets/cover/alexandra.jpg"
+  },
+     {
+    "title": "The Less I Know The Better",
+    "src": "assets/song/tlitb.mp3",
+    "artist": "Tame Impalla",
+    "cover": "assets/cover/tlitb.jpg"
+  },
+      {
+    "title": "White Ferrari",
+    "src": "assets/song/white_ferari.mp3",
+    "artist": "Frank Ocean",
+    "cover": "assets/cover/white.jpg"
+  }
+]

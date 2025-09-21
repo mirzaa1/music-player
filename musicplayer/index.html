@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Music Player</title>
+
+</head>
+
+
+<body>
+  <!-- ========== SIDEBAR ========== -->
+  <aside>
+    <div class="sidebar">
+      <div class="logo">
+        <span class="logo-icon">🎵</span> Music</span>
+      </div>
+      <ul>
+        <li>Home</li>
+        <li>Explore</li>
+        <li>Library</li>
+        <li>Podcasts</li>
+      </ul>
+      <p class="section">Your Activity</p>
+      <ul>
+        <li>Likes</li>
+        <li>Comments</li>
+      </ul>
+      <p class="section">PLAYLIST</p>
+      <ul>
+        <li class="active">High Distortion <span>45 songs • 95 mins</span></li>
+        <li>Easy Breezy Beats <span>23 songs • 40 mins</span></li>
+        <li>Mellow Moments <span>45 songs • 95 mins</span></li>
+        <li>Laid-Back Grooves <span>45 songs • 95 mins</span></li>
+        <li>Sunset Song <span>23 songs • 40 mins</span></li>
+      </ul>
+      <button class="new-playlist">+ New Playlist</button>
+    </div>
+  </aside>
+
+
+  <div class="main">
+    <!-- Header -->
+    <header>
+      <input type="text" placeholder="Search song, artists, albums or podcast">
+      <div class="profile">👤</div>
+    </header>
+
+    <!-- Playlist Header -->
+    <section class="playlist-header">
+      <h1>High Distortion</h1>
+      <p>45 songs • 95 mins</p>
+      <button class="edit">Edit Playlist</button>
+    </section>
+
+    <section class="albums">
+      <div class="item" data-music="0">
+        <img src="assets/image/download.jpeg" alt="The Emptiness Machine">
+        <p>The Emptiness Machine</p>
+        <span>Linkin Park • 2024</span>
+      </div>
+      <div class="item" data-music="1">
+        <img src="assets/image/download.jpeg" alt="Tragedi">
+        <p>Tragedi</p>
+        <span>Seringai • 2012</span>
+      </div>
+      <div class="item" data-music="2">
+        <img src="assets/image/download.jpeg" alt="Another Day">
+        <p>Another Day</p>
+        <span>The Sigit • 2020</span>
+      </div>
+      <div class="item" data-music="3">
+        <img src="assets/image/download.jpeg" alt="Detourn">
+        <p>Detourn</p>
+        <span>The Sigit • 2013</span>
+      </div>
+      <div class="item" data-music="0">
+        <img src="assets/image/download.jpeg" alt="Adrenaline Merusuh">
+        <p>Adrenaline Merusuh</p>
+        <span>Seringai • 2018</span>
+      </div>
+      <div class="play-all">
+        <button id="playAllBtn">
+          <span class="icon">▶</span>
+        </button>
+        <p>Play All Music</p>
+      </div>
+
+    </section>
+    <div class="wrapper">
+      <!-- Left Section -->
+      <div class="songs container">
+        <div class="header">
+          <h2>All Songs</h2>
+          <button class="show-all">Show All</button>
+        </div>
+        <ul>
+          <li>
+            <img src="assets/cover/mayhem.jpg" alt="dummy img">
+            <div class="item" data-music="0">
+              <h4>Freezing Moon</h4>
+              <p>Mayhem</p>
+            </div>
+            <span>06:22</span>
+          </li>
+          <li>
+          <li>
+            <img src="assets/cover/likeHim.jpg" alt="dummy img">
+            <div class="item" data-music="1">
+              <h4>Like Him</h4>
+              <p>Tyler The Creator</p>
+            </div>
+            <span>04:38</span>
+          </li>
+          <li>
+            <img src="assets/cover/alexandra.jpg" alt="dummy img">
+            <div class="item" data-music="2">
+              <h4>Alexandra</h4>
+              <p>Reality Club</p>
+            </div>
+            <span>02:56</span>
+          </li>
+          <li>
+            <img src="assets/cover/tlitb.jpg" alt="dummy img">
+            <div class="item" data-music="3">
+              <h4>The Less I Know The Better</h4>
+              <p>Tame Impalla</p>
+            </div>
+            <span>02:37</span>
+          </li>
+          <li>
+            <img src="assets/cover/white.jpg" alt="dummy img">
+            <div class="item" data-music="4">
+              <h4>White Ferrari</h4>
+              <p>Frank Ocean</p>
+            </div>
+            <span>02:56</span>
+          </li>
+        </ul>
+
+      </div>
+
+      <!-- Right Section -->
+      <div class="suggestions container">
+        <h2>Suggestions</h2>
+        <ul>
+          <li>
+            <img src="assets/image/download.jpeg" alt="dummy img">
+            <div>
+              <h4>Heavy Is The Crown</h4>
+              <p>Linkin Park</p>
+            </div>
+            <span>02:48</span>
+          </li>
+          <li>
+            <img src="assets/image/download.jpeg" alt="dummy img">
+            <div>
+              <h4>Heroik</h4>
+              <p>Efek Rumah Kaca</p>
+            </div>
+            <span>04:18</span>
+          </li>
+          <li>
+            <img src="assets/image/download.jpeg" alt="dummy img">
+            <div>
+              <h4>Selamanya</h4>
+              <p>Seringai</p>
+            </div>
+            <span>03:11</span>
+          </li>
+          <li>
+            <img src="assets/image/download.jpeg" alt="dummy img">
+            <div>
+              <h4>Program Party Seringai</h4>
+              <p>Seringai</p>
+            </div>
+            <span>04:10</span>
+          </li>
+          <li>
+            <img src="assets/image/download.jpeg" alt="dummy img">
+            <div>
+              <h4>Mosi Tidak Percaya</h4>
+              <p>Efek Rumah Kaca</p>
+            </div>
+            <span>03:52</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer></footer>
+<audio id="audio"></audio>
+
+  <div class="player">
+   <img id="cover">
+    <div class="info">
+      <h4 id="Judul"></h4>
+      <p id="artist"></p>
+    </div>
+    <div class="controls">
+    <button id="prev"><img src="assets/icon/prev.svg" alt=""></button>
+    
+    <button id="play"><img src="assets/icon/play.svg" alt="icon play" id="playbtn"></button>
+    
+    <button id="next"><img src="assets/icon/skip.svg" alt=""></button>
+  </div>
+ 
+<span id="duration">0:00</span>
+  <div class="progress-container">
+    <div id="progress"></div>
+    </div>
+
+      <span id="durasi-gerak">00:00</span>
+  
+</div>
+
+</footer>
+  <script src="script.js"></script>
+</body>
